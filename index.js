@@ -1,16 +1,13 @@
 const express=require('express');
 const app=express();
 const joi=require('joi');
+var fs = require('fs');
+
 
 app.use(express.json());
 
-const movies=[
-    {id:1,name:'La La Land',genre:'Romantic Comedy'},
-    {id:2,name:'Shutter Island',genre:'Thriller'},
-    {id:3,name:'Journey to the center of the Earth',genre:'Adventure'},
-    {id:4,name:'Mortal Combat',genre:'Fighting'},
-    {id:5,name:'Jobs',genre:'Biopic'}
-];
+const moviesData=fs.readFileSync('data.json');
+const movies=JSON.parse(moviesData);
 
 app.get('/api/helloworld',(req,res) => {
     res.send('Hello world');
@@ -47,7 +44,7 @@ app.get('/api/movies/name/:name', (req,res) => {
     res.send((movie));
 });
 
-app.post('/api/movies', (req,res) => {
+app.post('/api/post/movies', (req,res) => {
     const schema = {
         name: joi.string().min(3).required(),
         genre: joi.string().min(3).required()
@@ -68,8 +65,10 @@ app.post('/api/movies', (req,res) => {
     };
 
     movies.push(movie);
+    var moviesNewData=JSON.stringify(movies,null,2);
+    fs.writeFileSync('data.json',moviesNewData);
     res.send(movie);
 });
 
-const port=process.env.PORT||3000;
+const port=3000;
 app.listen(port, () => console.log(`Listening at port ${port}`));

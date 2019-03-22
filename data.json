@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "La La Land",
+    "genre": "Romantic Comedy"
+  },
+  {
+    "id": 2,
+    "name": "Shutter Island",
+    "genre": "Thriller"
+  },
+  {
+    "id": 3,
+    "name": "Journey to the center of the Earth",
+    "genre": "Adventure"
+  },
+  {
+    "id": 4,
+    "name": "Mortal Combat",
+    "genre": "Fighting"
+  },
+  {
+    "id": 5,
+    "name": "Jobs",
+    "genre": "Biopic"
+  }
+]

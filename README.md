@@ -46,3 +46,14 @@ Enter the following in the body of the request:
 ID will be automatically added.
 
 Once a POST request is successful, the data.json file should be updated with your newly added data appended to the end of original file.
+
+### Note
+
+If your machine is showing an error which says something like:
+
+**Error: listen EADDRINUSE: port number 3000 already in use**
+
+You may have to run the following command to stop all the currently running node instances:
+```
+killall node
+```

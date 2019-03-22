@@ -20,7 +20,7 @@ nodemon index.js
 ```
 ## GET Requests
 
-If you want to run the get requests:
+This is to be done in the browser. If you want to run the get requests, go to the following URLs:
 
 * For complete movies list:
 http://localhost:3000/api/movies/
@@ -35,11 +35,14 @@ http://localhost:3000/api/movies/genre/(genre-here)
 http://localhost:3000/api/movies/name/(name-here)
 
 ## POST Requests
-Use POSTMAN software. [Download Here](https://www.getpostman.com/downloads)
+
+This is to be done using POSTMAN software. [Download Here](https://www.getpostman.com/downloads)
 
 Enter the following in the body of the request:
 
 - Name - Name of the movie to be added (Minimum 3 characters long)
 - Genre - Genre of the movie to be added (Minimum 3 characters long)
 
-ID will be automatically added
+ID will be automatically added.
+
+Once a POST request is successful, the data.json file should be updated with your newly added data appended to the end of original file.

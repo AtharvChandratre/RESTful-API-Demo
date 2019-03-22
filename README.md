@@ -36,6 +36,7 @@ http://localhost:3000/api/movies/name/(name-here)
 
 ## POST Requests
 Use POSTMAN software. [Download Here](https://www.getpostman.com/downloads)
+
 Enter the following in the body of the request:
 
 - Name - Name of the movie to be added (Minimum 3 characters long)

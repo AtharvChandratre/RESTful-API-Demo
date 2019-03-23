@@ -34,6 +34,8 @@ http://localhost:3000/api/movies/genre/(genre-here)
 * For searching for a movie by name:
 http://localhost:3000/api/movies/name/(name-here)
 
+To see the returned data as a JSON format in the browser and not as a single-line string, download the [JSONView Chrome Extension](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en). It will make the returned data easier to understand and more aesthetic.
+
 ## POST Requests
 
 This is to be done using POSTMAN software. [Download Here](https://www.getpostman.com/downloads)
